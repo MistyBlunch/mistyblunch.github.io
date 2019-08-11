@@ -285,6 +285,10 @@ a:hover {
   height: 100%;
 }
 
+.column.project .img-container .project:hover {
+  filter: brightness(.50);
+}
+
 .column.project .project-name {
   margin-top: .3rem;
   font-weight: 700;

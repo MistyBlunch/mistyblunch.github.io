@@ -41,7 +41,7 @@ function selectLan(el) {
 
 
 /**********************************************/
-/*  Main Hero
+/*  Main Hero 
 /**********************************************/
 function toContact() {
   let heroContact = document.getElementsByClassName('hero-contact')
@@ -72,6 +72,15 @@ function onScroll() {
   } else {
     heroContact_0.style.zIndex = '-1'
   }
+}
+
+/* Show Read More */
+function openReadMore(id) {
+  let readMoreTXT = document.getElementById(id)
+  let readMoreSection = document.getElementById(id + '-section')
+  console.log("You're curious 👀")
+  readMoreTXT.style.display = 'none'
+  readMoreSection.style.display = 'block'
 }
 
 
@@ -165,17 +174,4 @@ function seeMoreProjects() {
   moreProjects_0.style.display = 'block'
   moreProjectsBtn_0.style.display = 'none'
   console.log('There are the projects that I\'ve done 🐶')
-}
-
-/**********************************************/
-/*  REPEATED ELEMENTS 
-/**********************************************/
-
-/* Show Read More */
-function openReadMore(id) {
-  let readMoreTXT = document.getElementById(id)
-  let readMoreSection = document.getElementById(id + '-section')
-  console.log("You're curious 👀")
-  readMoreTXT.style.display = 'none'
-  readMoreSection.style.display = 'block'
 }

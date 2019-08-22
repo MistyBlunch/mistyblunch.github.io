@@ -556,6 +556,12 @@ a:hover {
     padding: 2rem 1rem;
   }
 
+  /* Skills
+  /*********************************/
+  .column.skill .img img {
+    max-width: 50px;
+  }
+
   /* Projects 
   /*********************************/
   .container.projects, .container.more-projects {

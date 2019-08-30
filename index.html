@@ -83,6 +83,10 @@
             <li class="es-opt">Proyectos</li>
           </a>
           <li>/</li>
+          <a href="#blog" class="no-deco">
+            <li>Blog</li>
+          </a>
+          <li>/</li>
           <a href="#contact" onclick="toContact()" class="no-deco">
             <li class="en-opt">Contact</li>
             <li class="es-opt">Contacto</li>
@@ -112,12 +116,12 @@
              y entuasiasta por la tecnología, el código, la música
             y el arte. <br>
           </h5>
-          <h6 class="subtitle is-6 en-opt">I write posts when I'm free about programming or tutorials, 
+          <h6 class="subtitle is-6 en-opt">I write articles when I'm free about programming or tutorials, 
             you can find them in 
             <a href="https://medium.com/@gracenikole" target="_blank"rel="noopener noreferrer">Medium</a> 
             and in <a href="https://dev.to/mistyblunch" target="_blank" rel="noopener noreferrer">dev.to</a>. 
           </h6>
-          <h6 class="subtitle is-6 es-opt">Escribo posts cada que tengo tiempo acerca de programación 
+          <h6 class="subtitle is-6 es-opt">Escribo artículos cada que tengo tiempo acerca de programación 
             o tutoriales, puedes encontrarlos en
             <a href="https://medium.com/@gracenikole" target="_blank"rel="noopener noreferrer">Medium</a> 
             y también en <a href="https://dev.to/mistyblunch" target="_blank" rel="noopener noreferrer">dev.to</a>. 
@@ -137,7 +141,7 @@
           </h6>
           <h6 class="subtitle is-6 en-opt">
             For now I'm a student although I'm learning more things in books, YouTube videos and blogs too. 
-            I really like reading programing posts I've always loved learning something new 💚
+            I really like reading programing articles I've always loved learning something new 💚
           </h6>
           <h6 class="subtitle is-6 es-opt">
             Por ahora soy estudiante, sin embargo, estoy aprendiendo más leyendo algunos libros, 
@@ -443,117 +447,118 @@
       <div class="container projects-wrapper is-flex f-d-col center-x">
         <h1 class="title is-1 has-text-centered en-opt">what projects have I done?</h1>
         <h1 class="title is-1 has-text-centered es-opt">¿Qué proyectos hice?</h1>
-        <div class="container projects">
-            <div class="column project has-text-centered en-opt">
-              <div 
-                class="img-container" 
-                onclick="showProject(this)" 
-                data-title="Krowdy Website"
-                data-link='https://www.krowdy.com/'
-                data-desc="This is a website to learn about Krowdy's services and technologies 🦄 
-                and also to learn about Human Resources in its amazing Blog."
-                data-tools="Wordpress, Elementor, Hubspot, Mailchimp"
-                >
-                <img class="project" src="images/projects/krowdy.png" alt="Krowdy Website image">
-              </div>
-              <a href="https://www.krowdy.com/" class="no-deco" target="_blank">
-                Krowdy Website
-              </a>
-            </div>
-            <div class="column project has-text-centered es-opt">
-              <div 
-                class="img-container" 
-                onclick="showProject(this)" 
-                data-title="Krowdy Web"
-                data-link='https://www.krowdy.com/'
-                data-desc="Este es una página web para conocer acerca de las sevicios y tecnologías 🦄 
-                de Krowdy y también para aprender acerca del área de Recursos Humanos en su increíble
-                Blog."
-                data-tools="Wordpress, Elementor, Hubspot, Mailchimp"
-                >
-                <img class="project" src="images/projects/krowdy.png" alt="Krowdy Web imagen">
-              </div>
-              <a href="https://www.krowdy.com/" class="no-deco" target="_blank">
-                Krowdy Web
-              </a>
-            </div>
-
-            <div class="column project has-text-centered en-opt">
-              <div 
-                class="img-container" 
-                onclick="showProject(this)" 
-                data-title="Leauty Web Scraping"
-                data-link='https://github.com/MistyBlunch/leauty'
-                data-desc="This project consists of the web scraping 🕷 of libgen.is, a free library 
-                of books, where I obtained the data from the books and showed them on a web page 
-                with a more beautiful design."
-                data-tools="Pyhton, BeautifulSoup, Flask, Jinja2"
-                >
-                <img class="project" src="images/projects/leauty.png" alt="Leauty web scraping image">
-              </div>
-              <a href="https://github.com/MistyBlunch/leauty" class="no-deco" target="_blank">
-                Leauty Web Scraping
-              </a>
-            </div>
-            <div class="column project has-text-centered es-opt">
-              <div 
-                class="img-container" 
-                onclick="showProject(this)" 
-                data-title="Leauty Web Scraping"
-                data-link='https://github.com/MistyBlunch/leauty'
-                data-desc="Este proyecto consiste en usa una técnica para sacar datos(Web Scraping 🕷)  
-                de libgen.is, una librería con ejemplares gratis, de donde se obtienen los datos de 
-                los libros y después son mostrados en otra página con más bonito diseño."
-                data-tools="Pyhton, BeautifulSoup, Flask, Jinja2"
-                >
-                <img class="project" src="images/projects/leauty.png" alt="Leauty web scraping imagen">
-              </div>
-              <a href="https://github.com/MistyBlunch/leauty" class="no-deco" target="_blank">
-                Leauty Web Scraping
-              </a>
-            </div>
-
-            <div class="hide-t">
+        <div class="all-projects">
+          <div class="container projects">
               <div class="column project has-text-centered en-opt">
-                  <div 
-                    class="img-container" 
-                    onclick="showProject(this)" 
-                    data-title="BCP Form"
-                    data-link='https://bolsadetrabajo.laborum.pe/bcpForm/'
-                    data-desc="Form 📝 to apply for the job offers of BCP with a dashboard 
-                    generated with DataTable that shows the data of the applicants taken 
-                    from Firebase."
-                    data-tools="HTML, JS, CSS, Firebase, Amazon S3, DataTable"
-                    >
-                    <img class="project" src="images/projects/bcp_form.png" alt="BCP Form image">
-                  </div>
-                  <a href="https://bolsadetrabajo.laborum.pe/bcpForm/" class="no-deco" target="_blank">
-                    BCP Form
-                  </a>
+                <div 
+                  class="img-container" 
+                  onclick="showProject(this)" 
+                  data-title="Krowdy Website"
+                  data-link='https://www.krowdy.com/'
+                  data-desc="This is a website to learn about Krowdy's services and technologies 🦄 
+                  and also to learn about Human Resources in its amazing Blog."
+                  data-tools="Wordpress, Elementor, Hubspot, Mailchimp"
+                  >
+                  <img class="project" src="images/projects/krowdy.png" alt="Krowdy Website image">
+                </div>
+                <a href="https://www.krowdy.com/" class="no-deco" target="_blank">
+                  Krowdy Website
+                </a>
               </div>
               <div class="column project has-text-centered es-opt">
                 <div 
                   class="img-container" 
                   onclick="showProject(this)" 
-                  data-title="BCP Formulario"
-                  data-link='https://bolsadetrabajo.laborum.pe/bcpForm/'
-                  data-desc="Formulario 📝 para postular a una oferta de trabajo del BCP 
-                  con un dashboard generado por DataTable que muestra los datos de los 
-                  postulantes traídos desde Firebase"
-                  data-tools="HTML, JS, CSS, Firebase, Amazon S3, DataTable"
+                  data-title="Krowdy Web"
+                  data-link='https://www.krowdy.com/'
+                  data-desc="Este es una página web para conocer acerca de las sevicios y tecnologías 🦄 
+                  de Krowdy y también para aprender acerca del área de Recursos Humanos en su increíble
+                  Blog."
+                  data-tools="Wordpress, Elementor, Hubspot, Mailchimp"
                   >
-                  <img class="project" src="images/projects/bcp_form.png" alt="BCP Formulario imagen">
+                  <img class="project" src="images/projects/krowdy.png" alt="Krowdy Web imagen">
                 </div>
-                <a href="https://bolsadetrabajo.laborum.pe/bcpForm/" class="no-deco" target="_blank">
-                  BCP Formulario
+                <a href="https://www.krowdy.com/" class="no-deco" target="_blank">
+                  Krowdy Web
                 </a>
               </div>
-            </div>
-            <div class="see-more-projects is-flex center-x">
-              <a class="button is-rounded projects-more-btn no-deco" onclick="seeMoreProjects()">
-                See More
-              </a>
-            </div>
+
+              <div class="column project has-text-centered en-opt">
+                <div 
+                  class="img-container" 
+                  onclick="showProject(this)" 
+                  data-title="Leauty Web Scraping"
+                  data-link='https://github.com/MistyBlunch/leauty'
+                  data-desc="This project consists of the web scraping 🕷 of libgen.is, a free library 
+                  of books, where I obtained the data from the books and showed them on a web page 
+                  with a more beautiful design."
+                  data-tools="Pyhton, BeautifulSoup, Flask, Jinja2"
+                  >
+                  <img class="project" src="images/projects/leauty.png" alt="Leauty web scraping image">
+                </div>
+                <a href="https://github.com/MistyBlunch/leauty" class="no-deco" target="_blank">
+                  Leauty Web Scraping
+                </a>
+              </div>
+              <div class="column project has-text-centered es-opt">
+                <div 
+                  class="img-container" 
+                  onclick="showProject(this)" 
+                  data-title="Leauty Web Scraping"
+                  data-link='https://github.com/MistyBlunch/leauty'
+                  data-desc="Este proyecto consiste en usa una técnica para sacar datos(Web Scraping 🕷)  
+                  de libgen.is, una librería con ejemplares gratis, de donde se obtienen los datos de 
+                  los libros y después son mostrados en otra página con más bonito diseño."
+                  data-tools="Pyhton, BeautifulSoup, Flask, Jinja2"
+                  >
+                  <img class="project" src="images/projects/leauty.png" alt="Leauty web scraping imagen">
+                </div>
+                <a href="https://github.com/MistyBlunch/leauty" class="no-deco" target="_blank">
+                  Leauty Web Scraping
+                </a>
+              </div>
+
+              <div class="hide-t">
+                <div class="column project has-text-centered en-opt">
+                    <div 
+                      class="img-container" 
+                      onclick="showProject(this)" 
+                      data-title="BCP Form"
+                      data-link='https://bolsadetrabajo.laborum.pe/bcpForm/'
+                      data-desc="Form 📝 to apply for the job offers of BCP with a dashboard 
+                      generated with DataTable that shows the data of the applicants taken 
+                      from Firebase."
+                      data-tools="HTML, JS, CSS, Firebase, Amazon S3, DataTable"
+                      >
+                      <img class="project" src="images/projects/bcp_form.png" alt="BCP Form image">
+                    </div>
+                    <a href="https://bolsadetrabajo.laborum.pe/bcpForm/" class="no-deco" target="_blank">
+                      BCP Form
+                    </a>
+                </div>
+                <div class="column project has-text-centered es-opt">
+                  <div 
+                    class="img-container" 
+                    onclick="showProject(this)" 
+                    data-title="BCP Formulario"
+                    data-link='https://bolsadetrabajo.laborum.pe/bcpForm/'
+                    data-desc="Formulario 📝 para postular a una oferta de trabajo del BCP 
+                    con un dashboard generado por DataTable que muestra los datos de los 
+                    postulantes traídos desde Firebase"
+                    data-tools="HTML, JS, CSS, Firebase, Amazon S3, DataTable"
+                    >
+                    <img class="project" src="images/projects/bcp_form.png" alt="BCP Formulario imagen">
+                  </div>
+                  <a href="https://bolsadetrabajo.laborum.pe/bcpForm/" class="no-deco" target="_blank">
+                    BCP Formulario
+                  </a>
+                </div>
+              </div>
+              <div class="see-more-projects is-flex center-x">
+                <a class="button is-rounded projects-more-btn no-deco" onclick="seeMoreProjects()">
+                  See More
+                </a>
+              </div>
           </div>
           <div class="container more-projects">
             <div class="column project has-text-centered en-opt">
@@ -724,7 +729,8 @@
             <div class="column project has-text-centered">
           </div>
             <!-- Add more... -->
-          </div>   
+          </div>
+        </div>   
       </div>
     </div>
     <section id="project-popup" class="hero project d-none">
@@ -758,6 +764,19 @@
           </div>
         </div>
       </section>
+  </section>
+
+  <!-- Blog -->
+  <section class="hero blog" id="blog">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-centered en-opt">See my articles on <a href="https://codeilm.com" target="_blank" rel="noopener noreferrer">Codeilm</a></h1>
+        <h1 class="title has-text-centered es-opt">See my articles on <a href="https://codeilm.com" target="_blank" rel="noopener noreferrer">Codeilm</a></h1>
+        <div class="container">
+          <script src="https://codeilm.com/api/affiliates/affiliate.js?user_id=qyGdkNV"></script>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Contact -->

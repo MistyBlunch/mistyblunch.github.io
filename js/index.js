@@ -3,6 +3,7 @@
 /**********************************************/
 window.onscroll = function() {onScroll()}
 
+/**********************************************/
 /*  English Language default
 /**********************************************/
 function enDefLang() {
@@ -12,7 +13,6 @@ function enDefLang() {
   }
 }
 enDefLang()
-
 
 /**********************************************/
 /*  Select Language
@@ -38,7 +38,6 @@ function selectLan(el) {
     console.log('Hola!')
   }
 }
-
 
 /**********************************************/
 /*  Main Hero 
@@ -83,7 +82,6 @@ function openReadMore(id) {
   readMoreSection.style.display = 'block'
 }
 
-
 /**********************************************/
 /*  Skills Progrees
 /**********************************************/
@@ -110,11 +108,9 @@ function skillsProgress() {
 }
 skillsProgress()
 
-
 /**********************************************/
 /*  Work Projects
 /**********************************************/
-
 function showProject(project) {
   /* Descriptions and Titles */
   let title = project.dataset.title
@@ -150,8 +146,6 @@ function showProject(project) {
   popup.classList.replace('d-none', 'popup')
 }
 
-
-
 function closeProject() {
   let popup = document.getElementById('project-popup')
   let projectList = document.getElementById('project-list')
@@ -163,7 +157,6 @@ function closeProject() {
   }
   popup.style.display = 'none'
 }
-
 
 function seeMoreProjects() {
   let moreProjects = document.getElementsByClassName('container more-projects')

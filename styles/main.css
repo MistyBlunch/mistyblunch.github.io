@@ -24,13 +24,13 @@ body.body-page {
 /*********************************/
 :root {
   --mightygray: #556270;
-  --pacifica: #4ECDC4;
-  --applechic: #C7F464;
-  --cheerypink: #FF6B6B;
-  --grandmapink: #C44D58;
+  --pacifica: #4ecdc4;
+  --applechic: #c7f464;
+  --cheerypink: #ff6b6b;
+  --grandmapink: #c44d58;
 
-  --schoolbell: 'Schoolbell', cursive;
-  --quatrocen: 'Quattrocento Sans', sans-serif;
+  --schoolbell: "Schoolbell", cursive;
+  --quatrocen: "Quattrocento Sans", sans-serif;
 }
 
 a {
@@ -53,7 +53,8 @@ a:hover {
   margin: 0;
 }
 
-.col-1, .col-2 {
+.col-1,
+.col-2 {
   width: 50%;
 }
 
@@ -77,7 +78,7 @@ a:hover {
 #lang-opt {
   border: none;
   background-color: #ccc;
-  padding: .4rem;
+  padding: 0.4rem;
   color: #4a4a4a;
   border-radius: 4px;
 }
@@ -85,7 +86,6 @@ a:hover {
 #lang-opt:focus {
   outline: none;
 }
-
 
 /**************************************************************************************************/
 /*********************************/
@@ -106,7 +106,7 @@ a:hover {
 }
 
 .hero-princ-content.text .title::after {
-  content: '(MistyBlunch)';
+  content: "(MistyBlunch)";
   font-size: 25px;
   font-family: var(--schoolbell);
 }
@@ -114,7 +114,7 @@ a:hover {
 /* Social Media Main Hero
 /*********************************/
 .hero-princ .social-media {
-  margin-top: .7rem;
+  margin-top: 0.7rem;
 }
 
 .hero-princ .social-media a {
@@ -126,7 +126,6 @@ a:hover {
   margin-right: 1rem;
 }
 
-
 /* Footer Menu Main Hero
 /*********************************/
 .hero-princ-footer {
@@ -135,10 +134,10 @@ a:hover {
 
 .hero-princ-footer .menu a {
   color: inherit;
-}  
+}
 
 .menu li {
-  margin: .2rem;
+  margin: 0.2rem;
   font-weight: bold;
 }
 
@@ -152,7 +151,11 @@ a:hover {
 }
 
 .about-columns .col-1 {
-  background-image: linear-gradient(141deg, var(--pacifica) 0%, var(--applechic) 100%);
+  background-image: linear-gradient(
+    141deg,
+    var(--pacifica) 0%,
+    var(--applechic) 100%
+  );
   position: sticky;
   top: 0;
   bottom: 0;
@@ -173,7 +176,6 @@ a:hover {
   display: flex;
   margin: auto;
 }
-
 
 /**************************************************************************************************/
 
@@ -198,7 +200,7 @@ a:hover {
 }
 
 .column.skill {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .column.skill .img {
@@ -218,7 +220,7 @@ a:hover {
   height: 20px;
   background-color: #ccc;
 }
- 
+
 .in-progress {
   color: white;
   font-size: 14px;
@@ -241,7 +243,6 @@ a:hover {
   font-weight: bold;
 }
 
-
 /**************************************************************************************************/
 
 /*********************************/
@@ -251,12 +252,13 @@ a:hover {
   background-color: #ffffff;
 }
 
-.container.projects-wrapper  {
+.container.projects-wrapper {
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.container.projects, .container.more-projects {
+.container.projects,
+.container.more-projects {
   display: grid;
   grid-template-columns: 320px 320px 320px;
 }
@@ -270,27 +272,27 @@ a:hover {
 }
 
 .column.project .img-container::after {
-  content: url(../images/icons/eye.png);
+  content: url(../src/icons/eye.png);
   position: absolute;
   top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
-} 
+}
 
 .column.project .img-container .project {
   cursor: pointer;
   border-radius: 4px;
-  filter: brightness(.30);
+  filter: brightness(0.3);
   width: 100%;
   height: 100%;
 }
 
 .column.project .img-container .project:hover {
-  filter: brightness(.50);
+  filter: brightness(0.5);
 }
 
 .column.project .project-name {
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   font-weight: 700;
   color: var(--cheerypink);
 }
@@ -305,18 +307,17 @@ a:hover {
 /*********************************/
 
 #project-popup.project.popup {
-/*   transition: opacity 500ms; */
+  /*   transition: opacity 500ms; */
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  /* opacity: 1; */  
+  /* opacity: 1; */
   z-index: 100;
   overflow: scroll;
 }
-
 
 .project.popup .hero-body {
   padding: 20px;
@@ -324,13 +325,13 @@ a:hover {
   background-color: #ffffff;
   margin: 2rem;
   border: 1px solid var(--cheerypink);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .close.project {
   background-color: #ffffff;
   border-radius: 50%;
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   color: var(--cheerypink);
   font-size: 25px;
   position: absolute;
@@ -340,7 +341,7 @@ a:hover {
   margin-top: 13px;
   border: 1px solid var(--cheerypink);
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .close.project:hover {
@@ -349,8 +350,8 @@ a:hover {
   color: #ffffff;
 }
 
-.project-desc .characteristics .container:first-child { 
-  margin-bottom: 2rem; 
+.project-desc .characteristics .container:first-child {
+  margin-bottom: 2rem;
 }
 
 .project-desc .characteristics .lis {
@@ -371,12 +372,12 @@ a:hover {
 
 .column.project-desc h4 {
   color: var(--cheerypink);
-  margin-bottom: .9rem;
+  margin-bottom: 0.9rem;
 }
 
 .column.project-desc h5 {
   color: var(--mightygray);
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 /**************************************************************************************************/
@@ -385,11 +386,15 @@ a:hover {
 /* Contact
 /*********************************/
 .hero-contact {
-  background-image: linear-gradient(141deg, var(--grandmapink) 0%, var(--cheerypink) 100%);
+  background-image: linear-gradient(
+    141deg,
+    var(--grandmapink) 0%,
+    var(--cheerypink) 100%
+  );
   color: #ffffff;
 }
 
-.hero-contact-content{
+.hero-contact-content {
   margin-bottom: 1rem;
 }
 
@@ -405,7 +410,7 @@ a:hover {
   margin-right: 2rem;
 }
 
-.hero-contact-container .social-media a{
+.hero-contact-container .social-media a {
   font-size: 50px;
   color: var(--mightygray);
 }
@@ -420,14 +425,12 @@ a:hover {
 }
 /**************************************************************************************************/
 
-
 /*********************************/
 /* Blog
 /*********************************/
 .hero.blog {
   background-color: #f8f8f8;
 }
-
 
 /**************************************************************************************************/
 /*********************************/
@@ -438,8 +441,8 @@ a:hover {
   display: inline-block;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: .25s;
-  transition-duration: .25s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-delay: 0s;
@@ -452,7 +455,7 @@ a:hover {
   text-decoration: none;
 }
 
-.stick {    
+.stick {
   position: sticky;
   bottom: 0;
   top: 0;
@@ -506,7 +509,7 @@ a:hover {
 
 /**************************************************************************************************/
 
-@media(max-width: 992px){
+@media (max-width: 992px) {
   /* About 
   /*********************************/
   .container.skills .container {
@@ -522,13 +525,15 @@ a:hover {
     height: auto;
     padding: 6rem 0;
   }
-  .col-1, .col-2 {
+  .col-1,
+  .col-2 {
     width: 100%;
   }
 
   /* Projects 
   /*********************************/
-  .container.projects, .container.more-projects {
+  .container.projects,
+  .container.more-projects {
     grid-template-columns: auto auto;
   }
 
@@ -543,8 +548,7 @@ a:hover {
   }
 }
 
-
-@media(max-width: 601px){
+@media (max-width: 601px) {
   /* Set titles 
   /*********************************/
   .title.is-1 {
@@ -574,7 +578,8 @@ a:hover {
 
   /* Projects 
   /*********************************/
-  .container.projects, .container.more-projects {
+  .container.projects,
+  .container.more-projects {
     grid-template-columns: auto;
   }
   .container.more-projects {
@@ -607,7 +612,7 @@ a:hover {
   .hide-t {
     display: block;
   }
-  
+
   .show-t {
     display: none;
   }

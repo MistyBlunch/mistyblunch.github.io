@@ -6,13 +6,12 @@ window.onscroll = function() {onScroll()}
 /**********************************************/
 /*  English Language default
 /**********************************************/
-function enDefLang() {
+(function enDefLang() {
   let esOpt = document.getElementsByClassName('es-opt')
   for (let i = 0; i < esOpt.length; i++) {
     esOpt[i].style.display = 'none'
   }
-}
-enDefLang()
+}())
 
 /**********************************************/
 /*  Select Language
@@ -46,7 +45,6 @@ function toContact() {
   let heroContact = document.getElementsByClassName('hero-contact')
   let heroContact_0 = heroContact[0]
 
-  let docElScroll = document.documentElement.scrollTop
   let contactEl = document.documentElement.offsetHeight - heroContact_0.offsetHeight
 
   window.scroll({

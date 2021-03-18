@@ -1,9 +1,4 @@
 /**********************************************/
-/*  Set a Functions when window scrolls
-/**********************************************/
-window.onscroll = function() {onScroll()}
-
-/**********************************************/
 /*  English Language default
 /**********************************************/
 (function enDefLang() {
@@ -63,7 +58,7 @@ function onScroll() {
   
   let docElScroll = document.documentElement.scrollTop
 
-  if (docElScroll >= document.documentElement.offsetHeight - heroContact_0.offsetHeight) {
+  if (docElScroll + 1 >= document.documentElement.offsetHeight - heroContact_0.offsetHeight) {
     heroContact_0.style.zIndex = '0'
     console.log('Do you want to get in touch? 🖤')
   } else {
@@ -166,3 +161,10 @@ function seeMoreProjects() {
   moreProjectsBtn_0.style.display = 'none'
   console.log('There are the projects that I\'ve done 🐶')
 }
+
+/**********************************************/
+/*  Set a Functions when window scrolls
+/**********************************************/
+document.addEventListener("scroll", function() {
+  onScroll()
+})

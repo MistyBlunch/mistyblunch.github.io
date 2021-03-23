@@ -9,6 +9,22 @@
 }())
 
 /**********************************************/
+/*  Loader
+/**********************************************/
+let section = document.getElementsByTagName("section")
+let loader_ctn = document.getElementById("loader_ctn")
+
+for(let i=0; i<section.length; i++) {
+  section[i].style.display = 'none'
+}
+window.addEventListener("load", () => {
+  for(let i=0; i<section.length; i++) {
+    section[i].style.display = 'flex'
+  }
+  loader_ctn.style.display = 'none'
+})
+
+/**********************************************/
 /*  Select Language
 /**********************************************/
 function selectLan(el) {
@@ -50,6 +66,14 @@ function toContact() {
 }
 
 /**********************************************/
+/*  Footer Year
+/**********************************************/
+let anhio = new Date()
+let curr_year =  document.getElementById("current_year")
+curr_year.innerText = anhio.getFullYear() 
+/**********************************************/
+
+/**********************************************/
 /*  Function on Scroll of About Section
 /**********************************************/
 function onScroll() {
@@ -88,18 +112,6 @@ function seeMoreSkills() {
   moreSkillsBtn_0.style.display = 'none'
   console.log('There are the technologies that I saw 🐶')
 }
-
-function skillsProgress() {
-  let skills = document.getElementsByClassName('in-progress')
-
-  for (let i = 0; i < skills.length; i++) {
-    skills[i].style.width = skills[i].dataset.val
-    skills[i].innerHTML = skills[i].dataset.val
-    skills[i].style.backgroundColor = skills[i].dataset.color
-    skills[i].style.height = '20px'
-  }
-}
-skillsProgress()
 
 /**********************************************/
 /*  Work Projects

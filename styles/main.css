@@ -196,15 +196,10 @@ a:hover {
 }
 
 .columns.skills {
-  flex-direction: column;
-}
-
-.column.skill {
-  margin: 0.5rem 0;
-}
-
-.column.skill .img {
-  width: 55px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50px);
+  grid-column-gap: 30px;
+  align-items: center;
 }
 
 .skills-more-btn {
@@ -213,28 +208,13 @@ a:hover {
   color: #4a4a4a;
 }
 
-/* SKills ProgressBar
-/*********************************/
-.bar {
-  width: 100%;
-  height: 20px;
-  background-color: #ccc;
-}
-
-.in-progress {
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-}
-
 /* Skills Images
 /*********************************/
-.column.skill .img {
-  margin-right: 1.5rem;
+.columns.skills .img {
   text-align: center;
 }
 
-.column.skill .img::after {
+.columns.skills .img::after {
   content: attr(data-desc);
   color: var(--mightygray);
   font-size: 12px;
@@ -426,17 +406,22 @@ a:hover {
 /**************************************************************************************************/
 
 /*********************************/
-/* Blog
+/* Loader
 /*********************************/
-.hero.blog {
-  background-color: #f8f8f8;
+#loader_ctn {
+  background: #fff;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 /**************************************************************************************************/
+
 /*********************************/
 /* Repeated Components and Helpers
 /*********************************/
-
 .social-media a {
   display: inline-block;
   -webkit-transition-property: all;

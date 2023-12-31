@@ -1,4 +1,4 @@
-# Misty Blunch's Porfolio
+# Misty Blunch's Portfolio
 
 ##### Simple portfolio made with HTML5, CSS, Bulma Framework and JS.
 ##### You can clone it and create your own portfolio too :squirrel:
